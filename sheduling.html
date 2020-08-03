@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kayachikitsa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="stylesNew.css">
+
+</head>
+
+<body>
+
+    <main>
+        <h3 style="color:#0043A4; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Schedule</h3>
+        <form>
+            <table id="customers">
+                <tr>
+                    <th>Name</th>
+                    <th>Timing</th>
+                    <th>Cancel</th>
+                    <th>schedule</th>
+                </tr>
+                <tr>
+                    <td>prathamesh</td>
+                    <td>9 - 10</td>
+                    <td>
+                        <button id="CancelBtn" class=" btn waves-effect red darken-1 " onclick="cancle()">Reject</button></td>
+                    <td><button id="ResheduleBtn " class="btn waves-effect waves-light green " onclick="rech()">Reschedule</button></td>
+                </tr>
+                <tr>
+                    <td>kaushal </td>
+                    <td>10 - 11</td>
+                    <td><button id="CancelBtn " class="btn waves-effect red darken-1 " onclick="cancle()">Reject</button></td>
+                    <td><button id="ResheduleBtn " class="btn waves-effect waves-light green " onclick="rech()">Reschedule</button></td>
+                </tr>
+                <tr>
+                    <td>Shrinidhi</td>
+                    <td>11 - 12</td>
+                    <td><button id="CancelBtn " class="btn waves-effect red darken-1 " onclick="cancle()" >Reject</button></td>
+                    <td><button id="ResheduleBtn " class="btn waves-effect waves-light green " onclick="rech()" >Reschedule</button></td>
+                </tr>
+                <tr>
+                    <td> Swati angadi</td>
+                    <td>12 - 1</td>
+                    <td><button id="CancelBtn " class="btn waves-effect red darken-1 " onclick="cancle()">Reject</button></td>
+                    <td><button id="ResheduleBtn " class="btn waves-effect waves-light green " onclick="rech()">Reschedule</button></td>
+                </tr>
+                <tr>
+                    <td>Praveen Panishetti</td>
+                    <td>2- 3</td>
+                    <td><button id="CancelBtn " class="btn waves-effect red darken-1 " onclick="cancle()">Reject</button></td>
+                    <td><button id="ResheduleBtn " class="btn waves-effect waves-light green "onclick="rech()">Reschedule</button></td>
+                </tr>
+
+            </table>
+
+        </form>
+    </main>
+	<script>
+	      
+	function cancle(){
+	
+	alert("Appointment is cancled")
+	
+	}
+	function rech(){
+	
+	alert("Appointment is reschedule")
+	
+	}
+	
+	
+	
+	</script>
+</body>
+
+</html>

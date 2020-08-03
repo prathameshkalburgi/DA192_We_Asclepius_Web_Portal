@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kayachikitsa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <main>
+        <h1 style="color:#0043A4; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Approval</h1>
+        <form>
+            <label for="userId">Doctor Name:</label>
+            <p id="doctorName" style="color: black;font-weight: bold;"></p>
+            <a id="DownloadBtns" href="" download="prathamesh.pdf">
+                <p>Download Resume</p>
+            </a>
+            </br>
+            <button id="approveBtn" class="btn waves-effect waves-light green">Approve</button>
+            <button id="rejectBtn" class="btn waves-effect red darken-1">Reject</button>
+
+        </form>
+    </main>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-storage.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBDgHaV0bBYENILFu9Jtl7D8u-tqGkAKD4",
+            authDomain: "online-opd-sih-finale-app.firebaseapp.com",
+            databaseURL: "https://online-opd-sih-finale-app.firebaseio.com",
+            projectId: "online-opd-sih-finale-app",
+            storageBucket: "online-opd-sih-finale-app.appspot.com",
+            messagingSenderId: "969052269767",
+            appId: "1:969052269767:web:79db6d52d411fa58cde2e2",
+            measurementId: "G-7QH71DVBKS"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="functions.js"></script>
+</body>
+
+</html>

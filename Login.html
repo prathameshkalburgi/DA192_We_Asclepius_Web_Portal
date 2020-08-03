@@ -1,0 +1,101 @@
+
+<html>
+  <head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="veiwport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Login.css"></link>
+	<script>
+	if( window.history.replaceState)
+	{
+		window.history.replaceState( null, null, window.location.href );
+	}
+	</script>
+  </head>
+  <body>
+  <form autocomplete="off" >
+<div class="main">
+  <img class="img-info" src="output-onlinepngtools.png" width="80px" height="80px">
+    <div class="heading">
+        <table><tr><th>
+          <p>          MINISTRY OF AYUSH <br>ALL INDIA INSTITUTE OF AYURVEDIC.<br>
+                                       NEW DELHI.<br></p>
+        </th></tr></table>
+    </div>
+      <div class="box">
+        <h2 style="font-family:cursive;">Organizaton Employee<br>Login Here</h2>
+              <div class="inputBox">
+                  <select name="role" id="rol" required>
+                      <option value="" selected disabled hidden > -- Select Role -- </option>
+                      <option class="superadmin" value="superadmin" >Super Admin</option>
+                      <option class="Orghead" value="Orghead">Organizational Head</option>
+					  <option class="Orghead" value="Doct">Doctor</option>
+              </div>
+              <div class="inputBox">
+                  <input autocomplete="off" type="text" name="username" id="username" required="" placeholder="Username">
+              </div>
+              <div class="inputBox">
+                  <input autocomplete="off" type="password" name="password" id="password" required="" placeholder="Password">
+              </div>
+              <button onclick="user1()" >Login</button> 
+              
+              <div class="button">
+              <a href="forgotpass.php">Forgot password?</a>
+              </div>
+	</div>
+    </div>
+   </form>
+   <script>
+		
+
+		function user1() {
+		 var roll=document.getElementById('rol').value
+		 if( roll=="Orghead" || roll=="Doct" || roll=="superadmin"){
+				var user = document.getElementById('username').value
+				var pass = document.getElementById('password').value
+						if (user == "kayachikista@aiia.com" && pass == "1234") {
+						window.location.href = "kayachikista.html";
+						alert('correct username')
+						} 
+						else if (user == "kaumarabhritya@aiia.com" && pass == "1234"){
+						window.location.href = "kaumarabhritya.html";
+						alert('correct username')
+						}
+						else if (user == "Striroga@aiia.com" && pass == "1234"){
+						window.location.href = "striroga.html";
+						alert('correct username')
+						}
+						else if (user == "Shalya@aiia.com" && pass == "1234"){
+						window.location.href = "Shalya.html";
+						alert('correct username')
+						}
+						else if (user == "Shalakya@aiia.com" && pass == "1234"){
+						window.location.href = "Shalakya .html";
+						alert('correct username')
+						}
+						else if (user == "SwasthaVritta@aiia.com" && pass == "1234"){
+						window.location.href = "Swastha Vritta.html";
+						alert('correct username')
+						}
+						else if (user == "Panchkarma@aiia.com" && pass == "1234"){
+						window.location.href = "Panchkarma.html";
+						alert('correct username')
+						}
+						else if (user == "RajaRamMahto@gmail.com" && pass == "1234"){
+						window.location.href = "sheduling.html";
+						alert('correct username')
+						}
+						else if (user == "jagadishkalburgi@gmail.com" && pass == "1234"){
+						window.location.href = "userData.html";
+						alert('correct username')
+						}
+						else {
+					alert('incorrect username or password')
+  }
+  }
+}
+</script>
+  </body>
+</html>
+
+	
